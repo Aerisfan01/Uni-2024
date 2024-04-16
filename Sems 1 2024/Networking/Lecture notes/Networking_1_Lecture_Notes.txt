@@ -1,0 +1,577 @@
+Networking 1 Lecture Notes
+
+
+13/2
+Key dates - 
+W4 T1 (10%) (Topics 1,2,3)
+Week 7: Skills lab (30%) (Topics 3/4)
+Week 14/15: Project (40%) (Topics 1-9)
+Week 17-18: Final Test (20%) (Topic 7-11)
+
+
+
+
+
+20/2 - Network Models and Intro to Wireless Tech 
+	Rules in communication
+		Human communication protocols require 
+		Identified sender and Reciever 
+		Common language and grammar 
+		Speed and timing of delivery 
+		Confrimation of Acknowledgement requirements 
+
+
+	Computer network protocols are similar. It requires:
+		Messgae encoding 
+		messgae formatting and encapsulation 
+		message size 
+		message timing 
+		message delivery options
+
+
+	Encoding: Converting info into another acceptable form for transmission 
+	Decoding: Reverses the process in orsder to interpret the information (happens at the receiving end)
+
+	Encapsulation: placing one message format inside another message format
+	De-encapsulation: similar to when the recipient removes the letter from the envelope 
+
+	OSI X TCP/IP MODELS 
+
+	OSI and TCP/IP models describe the network communications 
+	The OSI and TCP/IP protocol suites where developed around the same time, and both of them have a model to 
+	describe the network communication 
+
+	OSI has 7 Layers which describe a specfic aspect of networking communication 
+	OSI is primarly used because of detail it provides 
+
+	TCP/IP is fabric of networks as the internet has become a key part of orgs 
+
+	TCP/IP has 4 Layers 
+
+
+	OSI model: https://cdn.discordapp.com/attachments/1212554806871461919/1212555105979863091/image.png?ex=65f242f1&is=65dfcdf1&hm=ee8bc328db94448a000c595512e97b3e285f01ff681d85a74094591376611ca9&
+
+	TCP/IP model: https://cdn.discordapp.com/attachments/1212554806871461919/1212555451149844530/image.png?ex=65f24343&is=65dfce43&hm=9ba8ae873ed4db38508e092172639745e3246ced4ed8d13a9d482c3e849d2f1e& 
+
+	Comparing both models: https://cdn.discordapp.com/attachments/1212554806871461919/1212555636739416095/image.png?ex=65f2436f&is=65dfce6f&hm=a28b17e35c168d0e31b2a7efce08fa05001c3068972e54b0699616f94da82552&
+
+	Encapsulation and De-encapsulaiton: https://cdn.discordapp.com/attachments/1212554806871461919/1212556310965649428/image.png?ex=65f24410&is=65dfcf10&hm=e04fcef6db67ed652bab38fcf8ed38865efcac91fddab883854a05cc0ddef75d&
+
+	PDU x OSI x TCP/IP: https://cdn.discordapp.com/attachments/1212554806871461919/1214140175882518528/osi-tcp-ip-pdu_1.png?ex=65f80727&is=65e59227&hm=972dbfa6d1af2bca5112fc7d3d8a418d1384f1c3378e9f6961db9a19a6ed34fe&
+
+	In OSI model transmitting hosts passesd data from layer 7 (Application Layer) to Layer 1 (Physical)
+
+	Encapsulaiton happens when data travels from application layer to physical layer, when data is sent from a device 
+
+	It then passes over the comms channel to the destination host where the data proceeds back from layer 1 to layer 7 
+
+	De-encapsulation happens when data travels from phys layer to app layer. e.b when data is received at device 
+
+	To foware a packet, each device will remove the old address of the last sending and recieveing devices and replaced these with its own address and the address of the next device which needs to receieve ther packet 
+	this is called de-encapsulation and the opposite process in encapsulation 
+
+	Once packet is there it is de-encapsilated and placed in the correct order so the host can reassemble the segments allowing for reconstruction 
+
+	
+	Steps of Data Transmission
+
+		Data Creation:
+		Application layer of the sending device handles encoding, compression, and encryption if necessary.
+		
+		Transmission to Transport Layer:
+		Processed data is sent as a stream to the transport layer.
+		
+		Segmentation:
+		Sending host breaks data into small segments for efficient simultaneous transmission.
+		
+		Packetization:
+		Segments are addressed with source and destination internet addresses, forming packets.
+		
+		Addressing with MAC/Physical Addresses:
+		Packets are addressed with MAC or Physical Addresses, becoming frames.
+		
+		Frame Encoding:
+		Network access layer prepares frames with source and destination addresses.
+		
+		Bit Encoding:
+		Frames are encoded into bits.
+		
+		Transmission Medium:
+		Bit stream is converted to electrical pulses, light flashes, or radio waves.
+		
+		Network Media Transmission:
+		Converted signals are sent across the network media for transmission
+
+	Communicatinmg with Device in same network 
+	https://cdn.discordapp.com/attachments/1212554806871461919/1212558916588806144/image.png?ex=65f2467d&is=65dfd17d&hm=7b12c4eef622e99eb7f42b6408ace1e0aff7e3ecfd496e0498bd88297d69bfad&
+
+	MAC x IP: https://cdn.discordapp.com/attachments/1212554806871461919/1212559256923013150/image.png?ex=65f246cf&is=65dfd1cf&hm=f4c7a772d551c407066fe8a2dd588c3b389e55e21b31559dd38a4512f8db61d7&
+
+	MAC addresses are unique to the device - Hexadecimal numbers 48 bits binary 
+
+	IP Address - Change with the location of a device - Dotted decimal numbers 32 bits binary 
+
+
+	Default Gateway - It is the router interface that routes traffic out of a local network 
+
+	Image: https://cdn.discordapp.com/attachments/1212554806871461919/1212560299023147068/image.png?ex=65f247c7&is=65dfd2c7&hm=74bb677daf00cbd884c36cceb517b38807aabe7d0d1cfad7059d7b39d813ae25&
+
+	The default gateway will know where to send the packet using it routing table 
+	the router interfact that is connected to a LAN is the default gateway address used by all devices in that LAN
+
+
+	Coummunicating in remote network: https://cdn.discordapp.com/attachments/1212554806871461919/1212561291231764550/image.png?ex=65f248b4&is=65dfd3b4&hm=63f8a5bc6b9c91e0cee034c2a85c2aab6d26b5809116d6a323ce583919668d44&
+
+
+	 Config with Router using CLI (Command Line Interface)
+	 Syntax: 
+
+	 # Interface (type number)
+	 # ip address (ip-address  mask)
+	 # no shutdown 
+	 # clock rate (value) 
+
+
+
+
+	Router Config:
+	Router(config)# interface g0/0 (or adjust if needed)
+	Router(Config-IF)# ip address 192.168.10.1  255.255.255.0 (or adjust)
+	Router(Config-if)# no shutdown 
+	Router(config-if)# clock rate 64000 (or adjust. Used on DCE end of Serial interface)
+
+
+WIRELESS TECHNOLOGY
+	Intro to Wireless LAN Networking 
+
+	An ever-expanding x Improving tech 
+
+	Standardized by the 802.11 family of protocols 
+
+	A WLAN is not a cellular phone network and doesnt provide packet data transmission for phones 
+
+	Infared, a type of wireless that cannot penetrate through walls due to low energy 
+
+	WIRELESS MEDIA 
+
+	Carry electromagnetuc signals that represent the binary digits of data communications using radio or microwaves 
+	arent restricted to conductors or pathways 
+	provide the greatest mobility options of all media 
+	are popular in home and business networks 
+
+	CONNECTING TO NETWORK 
+	Many homes use a combination of a wired, wireless switch and router called a integrated service router (ISR) 
+	With wireless devices, data is transmitted using radio waves 
+	A wireless network MUST incorportate a wireless access point (WAP) for devices to connect to 
+
+	BENEFITS OF WIRELESS 
+
+	Mobility, Scalability, Flexibility, cost savings, Installation time and Reliability in harsh 
+	enviorments 
+
+	LIMITIATIONS 
+
+	Wireless LANS (WLAN) use unlicensed regions of RF spectrum 
+	Can be congested and easily interfered with one another e.g microwaves and cordless phones 
+	Major concern: Security 
+
+	Factors influencing of radio waves:
+	 Reflection - occurs when rf waves bounce off objects 
+	 scattering - occurs when RF waves strike an uneven surface 
+	 Absorption - RF waves asorbed by Objects 
+
+	WLAN COMPONETS (Image) - https://cdn.discordapp.com/attachments/1212554806871461919/1212575977251672104/image.png?ex=65f25661&is=65dfe161&hm=3ccadafcee09d8389edf5f28b6630de8ddad36cab5ae7856aaeea67df3527b9d&
+
+
+	Wireless Channel (image)- https://cdn.discordapp.com/attachments/1212554806871461919/1212576561488986213/image.png?ex=65f256ec&is=65dfe1ec&hm=e38b425481c0b6f52e1466caf93b9889cff4715c4a8c3e212a50ae53c52445c2&
+	
+
+	The choice of channel for an AP must be made relative to the other wlans around it 
+	Adjacent BSS must non overlapping channels in order to optimized throughput 
+
+	APS x ISRS now offer a choice to configure the channel or allow the AP to auto located the least 
+	congested channel or maximum throughput 
+
+
+	SSID - Service Set IDentifier 
+	Important that wireless devices connect to the correct WLAN which is achived via a SSID
+
+	SSID is case-senstitve, alpha numeric, up to 32 characters. Sent in header if all frames transmitted over wlan. tells wireless devices WLAN they belong to 
+
+	All devices sharing a WLAN must have the same SSID in order to communicate 
+
+
+	ANTENNA KEY TERMS 
+	Directionality: coverage around antenna. Omnidirectional WLAN antenna transmits/receives signals in all horizontal directions equally. A directional antenna focuses the signal from the AP into a smaller coverage area, resulting in a stronger signal in this direction. 
+
+	Gain: The amount of increase in energy that an antenna appears to add to an RF signal. 
+
+	Polarization: Physical orientation (vertical or horizontal) of the element on the antenna that emits the RF energy. 
+
+	AUTHENTICATION X ASSOCIATION
+
+	Authentication - the client must successfully pass auth before it assoicte with the AP 
+
+	If both auth and MAC address filtering are enabled, auth is first 
+
+	with successful auth AP will then check the MAC address agaisnts its own MAC adress table. one verfierd the AP adds the host MAC address into the host table 
+
+	The client is then said to be associated with the AP and can connect 
+
+
+	WLAN ENCRYPTION
+	Auth x MAC filtering may stop an attacker from connecting to a wireless network but it will NOT prevent them intercepting transmitted sata 
+
+	Since there are no distinct boundaries and all traffic is transmitted thru the air, it is easy for an attack to intercept, or sniff the wireless frames. Encryption is the process of transforing data so that even if its it intercepted it is unusable 
+
+	WEP (wireless Equivalent Privacy) used to be a great way to prevent attackers from getting data. But the use of static keys on WEP devices were a weakness 
+
+	Apps can be used to discoveer them and once they have access to all transmitted data 
+
+	WPA is a stronger version 
+
+	PSK (Pre shared Keys)
+
+	The Access Point (AP) and client share the same key or secret word.
+	The AP sends a random string to the client, which encrypts it based on the shared key and sends it back.
+	The AP decrypts the received string and authenticates the client if it matches the original string.
+	PSK performs one-way authentication, where the client authenticates to the AP.
+	The AP is not authenticated to the client, and the actual user's identity is not verified.
+
+
+
+
+
+
+
+
+27/2 IPV4 ADDRESSING 
+	
+	IP Address 
+	An IP address is a identifier for a device on a TCP/IP network
+
+	IP addresses allow a device to reach another one to couumincate and exchange data within a intranet or 
+	the internet 
+
+	IPv4 and IPv6 are the most common 
+
+	Both must have uniquely identification 
+	IP can be Dynamic (DHCP) or static (Manual by Admin)
+	IPS use binary since hosts, servers and network devices can only read and understand IP addresses in bunary formatting 
+
+	Binary is a numbering system, 1 and 0's are bits, a byte is 8 
+
+	We read them as decimal numbers but computers read them in binary 
+
+	Binary numbering system each number represents increasing powers of 2 
+	Base 2 only has two digits 1 x 0 
+	in 8 bit: 2^7 = 128
+			  2^6 = 64
+			  2^5 = 32
+			  2^4 = 16 
+			  2^3 = 8 
+			  2^2 = 4 
+			  2^1 = 2 
+			  2^0 = 1 
+	0-9 are base numbers 
+
+	When we interpret a byte as a decimal, we add the quantity which that position represents if the digit is a 1. We do not add that quantit if the digit is a 0 
+
+	Example: 111111112 = 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 25510
+		     110000002 = 128 + 64 + 0 + 0 + 0 + 0 + 0 + 0 = 19210
+
+	INTERNET ADDRESSES 
+		Each deviced on a network must be uniquel identifed using IPv4 or IPv6 binary
+		IPV4 networks use a string of 32 bits 
+		Each packet includes a source and destination IP 
+		We represent 32 IPv4 in dotted decimals (2.1.1.1) as a group of 4 decimal numbers, one muber for each 8 bit (Example, it is more easy for us to remember as 2.1.1.1 than the 4 byte address 00000010.00000001.00000001.00000001)
+		Left most bye is often called the first octet and the remaining bytes are the second to the fourth octet on the right 
+
+	NETWORKING V HOST IN IP
+		all IPV4 have 32 bits of binary 
+		Network portion is the first 3 decimals and the last one is the host 
+		192.57.30 (network).224 (host)
+
+		Routers use the network part for forwarding packets 
+		Host part is used for LANS to find hosts 
+
+	Recognize the Network and Host 
+		IPV4 Classes 
+
+		(1-127) Class A = N.H.H.H
+					Mask= 255.0.0.0
+		(128-191) Class B = N.N.H.H
+					Mask= 255.255.0.0
+		(192-223) Class C = N.N.N.H 
+					Mask = 255.255.255.0
+
+
+
+
+		Class A: first tells us the network number and which belong to the host 
+		only can be between 0-127 and the first number is a network number 
+		Class A adresses are often called a slash 8 class because of the 8 bits for the network 
+		e.g Apple has 17.149.160.49
+
+		127.0.0.1 is a loopback address which is used for troubleshooting a local NIC
+
+
+		Class B and C: 
+		
+		Class B
+		First Byte is between 128 and 191 and then the first two belong to the network number 
+
+		An address like this is a class B aka slash 16 because of the 8 bits for the network 
+		UCLA has the ip 169.232.55.224 (169 = class b since between 128 - 191)
+
+
+		Class C
+		192 - 223 and the first 3 numbers belong to the network 
+		Seen as slash 24 
+		Yahoo.com has ip 209.131.36.158
+		class c since 209 is between 192 ansd 223 
+
+
+
+
+		IPS always have a mask?
+
+		An Ip Addres is always coupled with a subnet mask and tells a networked deviced which network it belings to 
+		Subnet masks signifies which part of the IP address is network and which is a host 
+		Seperate field to an IP address 
+
+		Example: 172.16.0.0 is class B with a subnet it is 255.255.0.0
+
+		Class Strructures A - E 
+		https://cdn.discordapp.com/attachments/1212554806871461919/1212594306276261980/image.png?ex=65f26773&is=65dff273&hm=da81f37d2119f91db78ee9fe12e40bbbbb4823139cc6182ac56b51202f504009&
+
+
+
+		32 bit subnet mask and Router operation
+
+		The router relies on the subnet mask to identify the network to which a host belongs.
+		
+		It maintains a list (routing table) of masks it has learned to determine the appropriate network for forwarding packets.
+		
+		The router, when receiving a packet, starts with the largest mask in its routing table and performs an AND operation with the packet's IP address.
+		
+		If a match is found, the router forwards the packet through the corresponding interface toward the destination network.
+		
+		If no match is found, the router iteratively performs AND operations with smaller masks until a match is identified.
+		
+		In the absence of a matching network, the router typically sends the packet to a default network.
+		
+		If no match is found and no default route is specified, the router discards the packet.
+
+
+		ANDing 
+
+		Rules   1 and 1 = 1 
+				0 and 1 = 0
+				0 and 0 = 0 
+				1 and 0 = 0 
+		Example - Logical (Boolean) AND operation:
+		Now, if we AND the two binary numbers together, things go like this:
+		0 0 0 0 1 0 1 0
+		1 1 1 1 1 1 1 1
+		0 0 0 0 1 0 1 0 ANDed!!
+
+
+
+
+
+		Identify the Networking Portion 
+		Diagram https://cdn.discordapp.com/attachments/1212554806871461919/1212596606428254289/image.png?ex=65f26997&is=65dff497&hm=7a057ce6cb37345af1656d93c944bec17eed57b0de43b8c6b991261c602128a8&
+
+
+
+		Subnet mask is compared to IPv4 bit for bit, left to right 
+		1s identify the network portion and the 0's identify the host 
+		Subnet mask actually tells the deviced where to look to identify the network by ANDing 
+
+		A packet has a destination IP as: 192 . 168 . 10 . 10
+		In binary form this is: 11000000 10100000 00001010 00001010
+		In its routing table, the router has the mask stored as:
+		255 . 255 . 255 . 0
+		In binary form this is: 11111111 11111111 11111111 00000000
+		The router applies bitwise ANDing to corresponding bits of IP and Mask:
+		1 1 0 0 0 0 0 0 . 1 0 1 0 0 0 0 0 . 0 0 0 0 1 0 1 0 . 0 0 0 0 1 0 1 0
+		AND 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 . 1 1 1 1 1 1 1 1 . 0 0 0 0 0 0 0 0
+		__________________________________________________
+		The result in binary: 1 1 0 0 0 0 0 0 . 1 0 1 0 0 0 0 0 . 0 0 0 0 1 0 1 0 . 0 0 0 0 0 0 0 0
+		In dotted decimal: 192 . 168 . 10 . 0
+		So the network address is: 192.168.10.0
+
+
+
+		Prefix = Network bits = numbers of 1s in the mask 
+		Diagram: https://cdn.discordapp.com/attachments/1212554806871461919/1212597558111764480/image.png?ex=65f26a7a&is=65dff57a&hm=65147d452f27a8fd4206fce1f34a19e7bb04245cf2d430fc8a5146b9e5d5e8d0&
+
+		Alternate shorter method of identifying a subnet mask is called a prefix length (CIDR in mask)
+
+
+		Calculate number of Hosts 
+		To calculate the number of host addresses in a network, you can follow these steps using the example of the 192.168.10.0/24 network:
+
+		1. Convert the subnet mask /24 (255.255.255.0) into binary: 11111111 11111111 11111111 00000000.
+
+		2. Identify the number of host bits by counting the number of 0s in the binary mask, which is 8 in this case.
+
+		3. Calculate the number of available hosts using the formula: 2^(number of host bits) - 2.
+		   - In this example: 2^8 - 2 = 256 - 2 = 254.
+
+		4. Therefore, in the 192.168.10.0/24 network, you can connect 254 hosts.
+
+		Summary: For the network 192.168.10.0/24, there are 254 available host addresses, as determined by the number of host bits in the subnet mask. All hosts within this network share the same subnet mask, 255.255.255.0 (/24).
+
+		In IPv4 networks, the concepts of network, host, and broadcast addresses are essential:
+
+		- Network Address:
+		  - A standard way to refer to a network.
+		  - Examples: 192.1.1.0 network, 192.1.1.0 255.255.255.0 network, or 192.1.1.0/24 network.
+		  - All hosts in the 192.1.1.0/24 network share the same network portion bits (192.1.1. ...).
+
+		- Host Addresses:
+		  - All values between the network address and the broadcast address.
+		  - Assignable to end devices in the network.
+		  - Example range in the 192.1.1.0/24 network: 192.1.1.1 – 192.1.1.254.
+
+		- Broadcast Address:
+		  - The last address in the network (192.1.1.255).
+		  - Used to send data to all hosts in a network simultaneously.
+		  - Utilizes the highest (last) address in the network range.
+		  - Has bits in the host portion set to all 1s.
+
+		  Types of Addresses: https://cdn.discordapp.com/attachments/1212554806871461919/1212598779640025128/image.png?ex=65f26b9e&is=65dff69e&hm=5287b320df45f4ed180eb391d3da43c28ca86be47f5aa3a1564eb83db598bd03&
+
+
+
+
+		  Network Address Translation (NAT) is a process used in networking to translate private and public IP addresses. 
+
+			There are various types of IP addresses, including public and private, static and dynamic, among others.
+
+			- Public Addresses:
+			  - Intended for hosts that are publicly accessible from the Internet.
+			  - Unique addresses to identify devices on the global Internet.
+			  
+			- Private Addresses:
+			  - Can be reused in different private networks.
+			  - Packets using private addresses are not directly routed on the public Internet.
+			  
+			- NAT (Network Address Translation):
+			  - Stands for Network Address Translation.
+			  - The router or firewall device at the perimeter of private networks must either block or translate (NAT) private addresses.
+
+
+
+
+			  Priavte Address Ranges:
+			  Private addresses are nout routable 
+			  Internet must be translater into public ipv4 addresses 
+
+			  Often used internally and ONLY locally significant. NOT ALLOWED ON THE INTERNET 
+			  Specifically, the blocks are: 
+
+			    A 10.0.0.0 /8 or 10.0.0.0 to 10.255.255.255
+				B 172.16 .0.0 /12 or 172.16.0.0 to 172.31.255.255
+				C 192.168 .0.0/16 or 192.168.0.0 to 192.168.255.255
+
+
+
+
+			IPV4 Comms: A host successfully connetced to a network can communicate with other devices in one of three ways 
+
+			1. Unicast - Process of sending a packet from one host to an individual 
+			2. Broadcast - The process of sending a packet from one host to all hosts in the network 
+			3. Multicast - The process of sending a packet from one host to a selected group of hosts, possibly in diff networks 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+DHCP 
+
+
+
+(D.O.R.A) Discover - Offer - request - acknowledged 
+
+
+Diagram 
+Image: https://cdn.discordapp.com/attachments/1212554806871461919/1212592217689038879/image.png?ex=65f26581&is=65dff081&hm=b2454d348d44ac0898fcbbf30542ec6ddbb10e91f3cbb7fc621a44e6fe2573da&
+
+
+What Lyr of the OSI model is the layer for Ip addr'ing - Layer 3 of TCP 
+
+PDU - Protocol Data Unit 
+
+
+602389:A8F6BC - Hexadecimal 
+Layer 2 for Data link 
+Frame will have a source and destination 
+
+DHCP will send out a broadcast in ALL DIRECTIONS 
+doesnt know mac address 

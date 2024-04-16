@@ -1,0 +1,47 @@
+public class Week2Lecture {
+
+    public static void main(String[] args) {
+
+        String i = "Hello"; // Declaration of variable i and type of data is int . This is how we write a
+
+                            // single line comment in java.
+
+
+
+        int num1 = 5;//Declared and initialised num 1 variable as int data type and store value 5
+
+        int num2 = 10;
+
+        int num3 = 30;
+
+        /*
+
+         * This is how you can add multiline comment in Java
+
+         * ldjflkdjd
+
+         * dlkfjd
+
+         * fjdjfd
+
+         * 
+
+         */
+
+
+
+
+
+        int total = 0; //creating a total variable with int data type and initialising the value as 0
+
+        total = num1 + num2 + num3; //used operator + to do the total of three variables
+
+        System.out.println(total); //printing the value of total variable to the screen
+
+
+
+    }
+
+
+
+}

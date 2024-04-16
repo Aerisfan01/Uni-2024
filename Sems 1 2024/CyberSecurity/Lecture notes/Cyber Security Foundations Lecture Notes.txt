@@ -1,0 +1,315 @@
+Cyber Security Foundations Lecture Notes
+
+
+13/2 - Intro
+
+	Objective of Cyber Sec:
+
+	Understand the importance of cyber sec in modern society 
+	overview of jey cyber security principles and concepts 
+	Intro to Cyber sec terms and defintions 
+	Discussion on impact of threats X attacks on Individuals, orgs and society as a whole 
+	Ethical and Legal considerations 
+
+
+
+
+	CHALLENGES OF SECURING INFO
+		No simple solution 
+		many different types of attacks 
+		Defending is often difficult 
+
+
+		PRINCIPLES AND CONCEPTS 
+			Cia Triad: Comprising confidentiality, integrity and availability is fundemental 
+			Confidentiality - ensures that senstive data is only avalibe to authorized individuals or entities 
+			Integrity - ensures that data remainds unaltered and trustworth, protecting it from unauthorized modifications 
+			Availability - ensures that systems and information are accessible when needed, preventing disruptions and ensuring continuius operations 
+
+			Firewall: Defence in depth. Has multiple layers of security to provide 
+			comprehensive protection. Firewalls, intrustion detection,encryption and user auth
+			minimizes vulnerablilites and mitigate risks 
+
+			Risk Management: Risk management is another essential concept. Identifying and assessing potential risks, implementing controls to mitigate risks, and always monitoring to 
+			adapt to new threats. This leaves orgs to focus more on work or more significant 
+			risks.
+
+		Authentication, Auth and Access 
+			Play critical roles in ensuring that only authorized people 
+			can access the data 
+			Encryption is used to protect data by transforming it and making it 
+			unreadable unless you have the same decryption key 
+
+		TERMS AND DEFINTIONS 
+			Asset: An assest is a valuable resource that needs to be protected from threats and risks these include:
+			
+			Data - Sensitive and confidential data such as records, finicial data, (IP), trade secrets and identifiable information (PII)
+			
+			Hardware - Physical devices and equipment e.g Servers, computers laptops, mobiles, networking devices and storage system (basically anything that stores and processes data)
+			
+			Software - Apps, Operating Systems, Databases and other software componets that facilliate businness operations, store and manipulate and provide data
+			
+			Networks - Infrastructure and communication channels that enable transfer of data and support, LANS AND WANS, routers, switches and firewalls 
+			
+			Facilities - Physical locations, buildings and facillties that house equipment, data centers and critical systems. This includes access control systems, surveillance systems and enviormental controls 
+			
+			Intellectual Property (IP) - Valuable intangible assets, such as patents, trademarks, copyrights and proprietary software which provides a competitve advantage to an Org
+			
+			Reputation - The reputation and brand image of a org which can have siginificant financial and operational impacts if compromised by cyber attacks or data breaches 
+			
+			Human Resources - Skilled employees, contractors and partners who contribute to the orgs operations, innovation and protection of assets. Essential to maintain confidentiality, intergrity and avaliablilty of info to ensure security and 
+			contiunity of operations. Orgs MUST identify thier critical assets, assess value and potential risks and implement appropriate security measures so they are safe guarded
+
+			Threat: Potiential danger or mallcious activity that has potential to exploit and cause harm to a orgs assets, systems or networks. Can be from anywhere including bots, individuals or even groups. Understanding the different types is crucial when implementing security measures (Malware, DDOS and Phising are common types)
+
+			Threat Agent: A threat agent refers to an entity or factor that poses a potiential threat or carries our malicious activites that can harm a orgs assests, systems or networks. (Hackers, Cybercriminals and script kiddies)
+
+			Potiental harm or loss due to exploits by threat agents, combines the likelihood of an attack occuring and the potential impact or consequences if the attack is a success 
+
+			Vulnerability - Threat vector - Threat Likelihood - Risk 
+
+
+		Types of Attackers 
+			Hacker-person uses computer skills to attack computers 
+
+			Black hat violate computer security for thier own gain and inflict malicious dmg 
+
+			White hat - Goal to expose security flaws, not to steal no corrupt data
+
+			Gray Hat - break into a system without owners perms but not for their own advantage 
+				
+		Hacker Categories
+				-  Cybercriminals 
+						Cybercriminals, whether individuals or organized groups, exploit digital vulnerabilities for financial gain or malicious purposes. Motivated by profit, they target individuals, businesses, and organizations to steal sensitive information, which is then monetized through fraud or sold on the dark web. Using evolving techniques and tools, they adapt to bypass security measures and collaborate within an underground economy. Some are linked to organized crime or nation-states, engaging in advanced attacks like espionage. Adapting to technology advancements, they leverage emerging technologies and exploit current events for phishing and malware. Understanding their motives is crucial for effective cybersecurity strategies, proactive threat intelligence, and fostering a cybersecurity-aware culture to mitigate risks.
+				-  Script Kiddies 
+						Script kiddies are individuals who engage in hacking activities without possessing in-depth programming or cybersecurity skills. Instead, they rely on pre-existing tools, scripts, and exploits created by more skilled individuals. These individuals have limited technical knowledge and often lack a deep understanding of hacking concepts, using readily available tools to exploit vulnerabilities. Script kiddies leverage automated hacking tools and scripts to carry out their attacks.
+				-  Brokers 
+					Brokers-attackers who sell knowledge of a vulnerability to other attackers/govs. Hired by the vendor but sell info about the vulnerabilities to get as much money as possible
+				-  Insiders
+					refer to individuals within an org who have access to senstive sys,info or networks (Employees, contractors or business partners). They can misuse or compromise the resources  
+				-  Cyberterrorists 
+					Individuals or groups who use cyberattacks for ideological,politcal or social goals. The use tech and the internet for destructive and disruptive attacks which target critical infrastructure, gov systems or orgs 
+				-  Hactivists 
+				-  State - sponsored attackers 
+					State-sponsored attackers are cyber threat actors who receive support, resources, or direction from a nation-state to conduct cyber-attacks. Backed by a government or intelligence agency, they pursue political, economic, or military objectives through their cyber activities.
+
+
+			
+		STEPS OF A CYBERATTACK
+			1. Reconnaissance - Attacker gains info about target
+			2. Weaponization - Creates tools like malware or exploits to carry out attack
+			3. Delivery  - A payload to the target, Phising emails, Malicious attachments, compromised websites or exploiting software vulnerabilities 
+			4. Exploitation - Uses the malicious payload for unauthorized access to the targets. Leveraging exploits, zero day exploits or social enginerring is used to compromise the defenses to get a foothold 
+			5. Installation - Installs the malicious softwares. These can include backdoors, trojans and others.
+			6. Command x Control - Communication channels are opened between their own infrastructure and the compromised system. This allows for data to be transfer from the compromised system to fuel thier objectives 
+			7. Lateral Movement - Explores compromised network to expand control to other systems. 
+			8. Data Exfiltration - Identifies the valuable data or sensitive information and exports them. This can include IP, Customer data, finicial records or data that is important and holds value 
+			9. Persistence - Attacker takes steps to ensure they have long term access to the files by creating hidden user accs, modifying the sys config or installing apps so they dont get found out  
+			10. Covering tracks - Attacker erases or manipulates the evidence of their activities, they may delete logs, modify the timestamps or use anti forensic tech to hinder the incident response investigations
+
+		5 Fundamentals for security prinicpals for Defense 
+			1. Layering 
+			 	 Involves implementing multiple security layers to provide varying levels of protection. If one layer fails, others act as additional barriers, ensuring continued defense against attacks.
+			2. Limiting 
+				Restricts access privileges to the minimum necessary for users or systems to perform their functions. By minimizing access, organizations mitigate potential damage in case of a compromise, containing breaches and reducing the attack surface.
+			3. Diversity 
+				Encourages using a diverse range of security controls and solutions to avoid reliance on a single measure. Implementing different vendors, technologies, and approaches enhances defense effectiveness, reducing the risk of a single vulnerability compromising overall security.
+			4. Obscurity 
+				Involves hiding or obfuscating sensitive information to add an extra layer of protection. While not a standalone solution, obscurity makes it harder for attackers to understand system workings and find vulnerabilities.
+			5. Simplicity 
+				 Emphasizes keeping security measures, systems, and processes as simple as possible. Complex systems are more prone to vulnerabilities and misconfigurations. Simplifying security reduces the chances of human error, improves manageability, and enhances overall security.
+
+
+
+
+
+
+
+
+
+20/2 - Cyber Threat Landscape 
+
+
+
+	Diff types of Cyber Threats 
+		Malware: Short for malicious software refers to software that is inting to cause 
+		harm, exploit or gain unauthorized access to systems, networks or data. Broad term that encompasses various types of Malicious programs and scripts made by cybercriminals (Can take many diff forms and employ diff techniques)
+			1. Viruses - Viruses are a form of malware that replicate by attaching to files, often exploiting vulnerabilities or tricking users into running infected programs. With a harmful payload, viruses can corrupt files or steal data. Activation triggers prompt malicious behavior. They spread through infected files, impacting system operations and compromising data integrity. Antivirus software is essential for detection and removal, emphasizing the importance of regular updates and user education to prevent infections.
+
+			2. Worms - Worms are self-replicating malware that spread across computer networks autonomously, exploiting vulnerabilities without user interaction. They create copies, infecting systems by scanning for weaknesses like weak passwords or unpatched software. Worms consume network bandwidth and system resources, leading to congestion or crashes. Their payloads may include backdoors for remote access or launching DDoS attacks. To defend against worms, organizations should regularly update software, employ network security measures, and educate users about safe computing practices.
+
+			3. Trojans - Trojans, named after the Trojan horse, are deceptive malware masquerading as legitimate programs. Unlike viruses or worms, Trojans rely on user actions to execute malicious activities. They deceive users by appearing as harmless software, often hidden in email attachments or downloads. Once executed, Trojans can create backdoors, capture sensitive information, or allow attackers control. They persist on systems, concealing their presence, and may deliver additional payloads. Protection involves safe computing habits, using updated antivirus software, and applying regular software updates to minimize vulnerabilities. Understanding Trojans' deceptive tactics is crucial for defense against unauthorized access and data breaches. 
+
+			4. Ransomware - Ransomware is malicious software that encrypts files, demanding a ransom for the decryption key. It spreads through various means, including email attachments and exploit kits, relying on social engineering to trick users. Consequences include financial losses, data compromise, and operational disruptions. Evolving tactics involve advanced encryption, evasion mechanisms, and data exfiltration. Prevention includes regular backups, robust security measures, software updates, and user education to combat this impactful threat.
+
+			5. Spyware - Spyware is covert software that collects user data without consent, often installed stealthily through deceptive means. It gathers sensitive information and transmits it to a remote server for malicious purposes. Spyware poses significant privacy and security risks, impacting system performance and introducing vulnerabilities. Detection can be challenging, but reputable antivirus and anti-spyware programs, combined with safe computing practices, help identify and remove infections. Prevention involves cautious behavior, avoiding suspicious links, and keeping software updated to counter these intrusive threats.
+
+			6. Adware - Adware is unwanted software that displays intrusive advertisements, often bundled with free downloads or obtained from malicious websites. It disrupts the user's browsing experience, consuming system resources and potentially leading to further malware infections. Removal requires reputable antivirus or anti-malware software, and prevention involves cautious downloading, custom installations, and the use of ad-blocking tools in web browsers. Understanding adware and adopting proactive measures help users maintain a secure and enjoyable online experience, free from unwanted ads and potential privacy risks.
+
+			7. Botnet - A botnet is a network of compromised computers that are under attacker/s known as botmasters and are created by infecting a large number of computers with malware, worms or trojans 
+
+			8. Logical Bomba - A backdoor is a hidden entry point allowing unauthorized access to a system, software, or network. Created intentionally, backdoors bypass authentication and security measures for various malicious activities. They may be hidden within legitimate components, remaining undetectable. Backdoors pose severe risks, including data breaches and unauthorized access, with potential consequences like service disruption and infrastructure compromise. Prevention involves cautious behavior, software updates, and the use of reputable security tools.
+
+			9. Social Engineering - Social engineering is an attack technique manipulating individuals into divulging information or performing actions through psychological manipulation. Exploiting human behavior and trust, attackers use deception, persuasion, or intimidation. Attacks can be generic or highly targeted, involving extensive research. Information gathering from sources like social media aids in tailoring attacks. Successful social engineering can result in unauthorized access, data breaches, identity theft, and reputational damage. Prevention requires awareness, caution, and the adoption of secure practices.
+
+			10. Phising - Phishing involves sending fraudulent emails or messages appearing trustworthy to trick recipients into revealing sensitive information. Deceptive communication occurs through various channels, including email and text messages. Messages create a sense of urgency or fear, prompting immediate action. Spoofed websites and URLs mimic legitimate ones, aiming to steal login credentials through fake login pages. Spear phishing targets specific individuals or organizations, personalized for increased believability. Pharming manipulates DNS or compromises systems to redirect victims to fake websites.
+				
+
+				Pretexting: Pretexting is a social engineering technique where an attacker creates a false scenario to manipulate individuals into revealing sensitive information or taking certain actions. This involves building trust by impersonating someone trustworthy, creating a believable story, and exploiting human emotions like helpfulness, curiosity, or fear. Techniques include impersonating colleagues, creating a sense of urgency, and fabricating scenarios. Prevention requires awareness, skepticism, and verifying requests in doubt.
+
+				Baiting: Baiting is a social engineering technique where an attacker lures a target into a trap by offering something enticing. This exploits human curiosity or greed to manipulate the target into taking actions benefiting the attacker. Baiting involves offering tempting incentives, exploiting basic human emotions, and can occur in both physical and digital environments. Consequences include unknowingly exposing systems to risks like malware installation or disclosing sensitive information.
+				
+				Tailgating: Tailgating involves an unauthorized person closely following an authorized individual to gain physical access to a restricted area or building. Exploiting politeness and helpfulness, the attacker bypasses security measures. This attack relies on blending in with legitimate entrants, highlighting the importance of employee awareness and adherence to security protocols.
+				
+				Impersonation: Impersonation is a social engineering technique where an attacker pretends to be someone else to deceive individuals and gain unauthorized access to information, systems, or privileges. The attacker gains trust by faking identities through email spoofing, caller ID manipulation, or social media profiles. Impersonation exploits authority or position, aiming to extract sensitive information, gain unauthorized access, or manipulate individuals into compromising security.
+				
+				Spear Phising: Spear phishing is a targeted form of phishing involving personalized attacks directed at specific individuals or organizations. Attackers carefully select targets, gather information, and craft personalized messages, often impersonating trusted entities. Messages are highly tailored, referencing the target's name, job, or recent activities. The goal is to exploit psychological manipulation, prompting the target to provide sensitive information or download malware. Vigilance, skepticism, and awareness are crucial for defense against spear phishing attacks.
+
+				Spam - Spam refers to unsolicited and unwanted messages sent in bulk through various communication channels, such as email, text messages, or social media. These messages are typically promotional and range from legitimate advertising to scams or phishing attempts. Spam is characterized by its unsolicited nature, bulk distribution using automated tools, and the potential for nuisance and disturbance. Email providers and communication platforms use spam filters to combat and prevent spam messages, aiming to protect users from unwanted content.
+
+				Type Squatting - Typo squatting, also known as URL hijacking, exploits typographical errors made by users when entering website URLs. Malicious actors register domain names similar to popular sites, relying on user mistakes. The purpose is to deceive users into visiting these typo squatting websites, often redirecting them to malicious content like phishing pages or malware downloads. Typo squatters use various methods, including registering common misspellings, incorporating different top-level domains, adding hyphens, numbers, or extra words to the domain name, and leveraging homoglyphs. The risks include falling victim to phishing, downloading malware, being redirected to malicious sites, and potential damage to the reputation of legitimate websites due to user confusion.
+
+				Physcial Procedures: 
+
+				Dumpster Diving - (Digging through trash to find information that can be useful in an attack)
+
+				Tailgating - Following behind an authorized individual through an access door
+
+				Piggybacking - An employee could conspire with an unauthorized person to allow him to walk in with him 
+
+				Shoulder surfing - Watching a authorized user enter a secruity code on a keypad 
+
+
+
+
+
+
+
+
+
+
+27/2 - Cryptography (Cipher x Hash Functions )
+ 	Define Cryptography: Cryptography is science and art of being able to transform info into a secure and unreadable format using maths algorithms. Plays a crucial role with confidentiality and integrity of the sensitve data, it prevents unauthorized access and protects agaisnt breaches and attacks. Its a major part in cyber sec as a whole 
+
+
+ 	Cryptography origins: Cryptography, originating in ancient times, aimed to secure messages and protect information. Key milestones include the Caesar Cipher in ancient civilizations, cryptanalysis advancements in the Renaissance, and the Enigma Machine during World War II. Modern cryptography, spurred by computer and mathematical advances, introduced public-key cryptography by Diffie and Hellman, followed by the RSA Algorithm by Rivest, Shamir, and Adleman in 1977. Today, cryptography is vital for secure digital communication, data protection, and online transactions, constantly evolving to address emerging threats.
+
+
+ 		Diff Types of Cryptography 
+
+ 		1. Symmetric 
+ 			Fast use of single secret key for both encrypt and decrypt 
+ 			Faster and more suitable for bulk data 
+ 			Key distribution between both parties is a major challenge 
+ 		2. Asymmetric Cryptography (Public Key Cryptography)
+ 			Utilizies a pair of keys (Public for encryption but Private for Decryption)
+ 			Enables secure key exchange without direct comms 
+ 			Widely used for digital signatures and secure communication 
+ 		3. Hybrid Cryptography
+ 			Combines the strengths of Symmetric and asymmertric cryptography 
+ 			Achieves efficient encryption and secure key exchange 
+ 			commonly use in modern cryptographic systems to optizmize security and performance 
+ 		4. Quantum Cryptography (Post Quantum)
+ 			Leverages the principals fo quantum mechanics for Crypto purposes 
+ 			Offers resistance agaisnt quantum computing attacks 
+ 			still experimental at the moment but shows promise 
+
+
+
+ 	Encryption: Encryption, a foundational aspect of cryptography, transforms plain, readable data (plaintext) into an unreadable form (ciphertext) through mathematical algorithms and a secret encryption key. Only with the corresponding decryption key can the ciphertext be reversed, ensuring confidentiality in data transmission and storage. Encryption is integral to secure communication, online transactions, password protection, data storage, and digital signatures, forming a crucial layer of security in the digital realm.
+
+ 	Decryption: Decryption is the reverse process, converting ciphertext back into plaintext using the correct decryption key. Authorized parties possessing the proper key can access and understand protected information. This process is vital for secure communication and data access, maintaining data confidentiality and integrity in cryptographic applications like online communication, digital signatures, and secure data storage.
+
+ 	Cleartext Data: Cleartext data, or plaintext, is the original, unencrypted, and readable form of information. It is easily understandable by humans but vulnerable to interception and unauthorized access. Encryption transforms cleartext into ciphertext, ensuring data security and confidentiality. Decryption is necessary to revert ciphertext to cleartext, allowing authorized users to comprehend the information.
+
+ 	Plaintext: Plaintext, synonymous with clear or unencrypted text, refers to data in its original, readable form. In cryptography, plaintext undergoes encryption to become ciphertext, which is then decrypted to restore the original information. Encrypting sensitive data protects it during transmission and storage, ensuring data confidentiality and security.
+
+ 	Key: A key is crucial in encryption and decryption, serving as a parameter for mathematical algorithms in these processes. There are two primary types:
+
+ 	Encryption: Used for encryption, it is either public (asymmetric cryptography) or secret (symmetric cryptography). In asymmetric cryptography, the public key is shared openly, while in symmetric cryptography, it remains secret between sender and receiver.
+
+ 	Decryption: Used for decryption, it is the private key in asymmetric cryptography and the shared secret key in symmetric cryptography. Secrecy and proper management of keys, combined with strong encryption algorithms, are vital for the security of cryptographic systems and data protection. 
+
+
+
+ 	Crypto 5 fundemental protections: 
+
+ 	1. Confidentiality: Ensures the condfidentiality by encrypting the data and making it unreadable to unauthroized indiviudals. Only those with the correct keys can access the og info 
+
+ 	2. Integrity: Can detect unauthorized changes or data tampering, hash functions can check the data intergrity and verify that the information is still the same 
+
+ 	3. Authentication: Enables auth by digital signatures or public key infrastructure. ensures the authenticity and origin of the data verifying that it came from the expected sender and hasnt been modified in any way 
+
+ 	4. Non-Repudiation: Through digital signatures, cryptography can achieve non-repudiation, meaning a sender cannot deny sending a specfic message or transcation. Digital signatures serve as proof as the messages origin and its intergrity 
+
+ 	5.  Key Exchange: Cryptography provides secure methods for exchanging and managing encryption keys. this ensures that only auth users have access to both encryption and decryption keys. this matains the security of the encrypted data. 
+
+
+
+ 	5 Pillars of info assurance 
+
+ 	Avaliability: Ensures information is ready for use and at the required performance level 
+ 	Integrity: Guarantees data, associated systems only accessible or modifable by auth users 
+ 	Authentication: Ensures user are who they really are e.g biometrics or user/pass 
+ 	Confidentiality: Limits access or places restrictions on data like personally identifable info or classified corporate data 
+ 	Nonrepudiation: Ensures individuals cannot deny an action because a system provides proof of the action 
+
+
+ 	3 main categories of crypto algorithms 
+	Hash Functions:
+
+	One-way algorithms that transform input (message or data) into a fixed-size output known as a hash value.
+	Designed for computational efficiency and quick calculation.
+	Primarily used for data integrity verification, ensuring the original data remains unchanged.
+	Examples include Secure Hash Algorithm (SHA-256, SHA-3), Message Digest Algorithm (MD5), and BLAKE2.
+	
+	Symmetric Key Algorithms (Secret Key Algorithms):
+
+	Use the same secret key for both encryption and decryption.
+	Generally faster and more efficient for bulk data encryption.
+	Requires secure sharing of the secret key between communicating parties.
+	Examples include Advanced Encryption Standard (AES), Data Encryption Standard (DES), Triple DES (3DES), and the Rivest Cipher (RC) family.
+	
+	Asymmetric Key Algorithms (Public Key Algorithms):
+
+	Use a pair of keys: a public key for encryption and a private key for decryption.
+	Public key is known to everyone and used to encrypt data, while the private key is kept secret for decryption.
+	Facilitate secure key exchange, digital signatures, and secure communication channels without sharing a secret key.
+	Examples include Rivest-Shamir-Adleman (RSA), Elliptic Curve Cryptography (ECC), and Digital Signature Algorithm (DSA).
+
+
+	Message Digest Algorithm (MD):
+
+	MD5 (128-bit output): Known for speed and simplicity but considered weak and vulnerable to collision attacks. Not recommended for cryptographic purposes.
+	SHA-1 (160-bit output): Also considered weak and susceptible to collision attacks. Not recommended for security-sensitive applications.
+	Secure Hash Algorithm (SHA) family:
+
+	SHA-256 (256-bit output): Part of SHA-2 family, widely used for cryptographic purposes, including digital signatures and SSL/TLS certificates.
+	SHA-512 (512-bit output): Another SHA-2 family member, offering stronger security due to its larger output size.
+
+
+	Whirlpool (512-bit output): A strong cryptographic hash function designed for enhanced security.
+	RIPEMD (RACE Integrity Primitives Evaluation Message Digest):
+
+	RIPEMD-160 (160-bit output): Developed as an alternative to SHA-1, offering similar security but with a shorter output size.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

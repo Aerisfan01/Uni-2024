@@ -1,0 +1,148 @@
+Exercise in sequence 
+    1.
+         running_total = 0 (Variable)
+            ask for numbers from the user with a repeating command 4 times   
+                add the numbers onto the current running total 
+                    display the updated running total
+                        after all 4 numbers have been inputted print the final number  
+                            end
+
+
+
+    
+    
+    2.      Ask the students for their names
+                record down their age  
+                    Repeat for 5 Steps 
+                        Sort all of the ages into ascending order 
+                            rewrite the ages in the correct order 
+                                end
+    
+    
+    
+    3.          Wake up
+                    Turn off alarm
+                        walk to the shower 
+                            turn on the water 
+                                get washed 
+                                    get dressed 
+                                        grab the cereal 
+                                            grab the milk 
+                                                open the cereal box 
+                                                    pour the cereal in the bowl 
+                                                        open the milk 
+                                                            pour the milk in the bowl 
+                                                                eat the cereal and drink the milk 
+                                                                    wash the bowl   
+                                                                        put in headphones 
+                                                                            grab wallet and bag 
+                                                                                walk to door 
+                                                                                    leave house 
+                                                                                        end 
+
+
+    
+    
+    
+    4.   Ring the pizza place
+            Choose the pizza type
+                choose which crust you desire
+                    choose between small large and extra large 
+                        how many will you order?
+                            would you like to add any extras? e.g garlic bread or coke 
+                                give final price and how long it will be 
+                                    end
+
+
+    
+    
+    5.  
+        print "welcome to the ATM"
+            User input for theirr account type (either savings or credit) and then store what they have chosen 
+                ask for the pin of their account and then store it 
+                    verify if the pin is correct if it is correct continue else display message that informs user the pin is incorrect  
+                        display the customers current balance 
+                            ask if they want to deposit or withdrawl money 
+                                if depost is selected ask for how much to be deposited and then add onto the current balance 
+                                    else if withdrawl is selected 
+                                        ask the user for how much to withdrawl 
+                                            subtract the withdrawl money from the current balance 
+                                                if it is still positive withdrawl the money else display "you dont have enough money for withdrawl" 
+                                                    ask if they want to repeat else display the final sum
+                                                        end 
+                                                    
+
+    
+    
+    6.          Enter the URL for the travel website 
+                    create an account or log into one 
+                        Search for the flights 
+                            Look at the flights and book one thats perfect for you 
+                                Select if its economy or first class 
+                                    enter information for the tickets 
+                                        enter banking details 
+                                            confirm the booking 
+                                                print thank you 
+
+
+
+
+
+
+
+
+
+
+Exercise in Selection
+
+            1.  Start 
+                2. If user's details are in the system THEN 
+                    3. If movie is in database THEN 
+                        4. If the movie is in database display times THEN
+                            5. If user is <18 >65 charge for 20 else if user is <18 charge 10 THEN 
+                                6. If movie has been selected and age has been filled in display final booking THEN 
+                                    7. Ask user to pay using thier card  
+                                        8. Display tickets to the user THEN 
+                                            9. ask if they need anymore 
+                                Else display error selecting movie 
+                            Else charge $15
+                        Else print "no showing of selected movie"
+                    Else if the movie isnt in the datbase display "No results found"
+                Else make them make an account 
+
+
+
+
+
+Exercise in Repetition 
+
+1.Begin
+2. Set prizenumber as Variable
+3. for i in range (12)
+4. ask for the childs name 
+5. add 1 to the prizenumber
+6. print "Congratulations (childs name), you have won prize <prize number>!
+7. if prizenumber = 13
+8. print "sorry there arent any prizes left" 
+9. end 
+
+
+
+
+
+TASK III 
+
+
+1.1 
+
+1. In computer jargon, what’s the difference between a statement and a comment?
+    statement: Computer commands that runs the program 
+    Comment: Note to the developer or others to identify comments (machine cannot read this)
+2. What does it mean to say that a program is portable?
+    the program can be used with many computers without needing changes 
+3. In common English, what does the word compile mean?
+    compile means to put something together. In computing however it converts human readable code into binary 
+4. What is an executable? Why is that word used as a noun?
+    An executable is a program that runs. it executes and carries out commands 
+ 
+

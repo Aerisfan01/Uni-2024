@@ -1,0 +1,215 @@
+13/2/24
+
+Steps in Program Dev 
+
+1 Define the problem 
+	
+	1. The Inputs
+	2. The processing steps
+	3. The desired outcome
+2 Outline the soiution
+	Outline may include
+		Major Steps involved 
+		Se
+
+3 Develop the outline into a algorithm 
+	Simple Steps
+
+4 Test the algorithm for correctness
+	Inputs 
+	Process (Sequence)
+	Process (Repitition)
+5 Code the algorithm into a specific programming language
+	Write code
+
+	Translate
+6 Run the program on the computer 
+
+Execute program 
+
+7 Documententation 
+
+
+
+Bytecode is like asslembly for some languages 
+Machine code but machine indepentdant 
+can run on any machine that has Java VM
+
+
+
+
+20/2 - Algorithmic solutions, datatypes, variables, arithmetic operators
+
+VARIABLES 
+1. Every programming language needs to store data, These are known as Variables 
+2. Ability to define and manipulate variables 
+3. Variables are stored in a named location in memory (These store variables)
+4. Values can be Numbers, Text Images, Sounds and many other types 
+
+All variables MUST be declared before they can be used 
+to create you first have to declare a variable and the type of info to be stored in it 
+e.g String message; 
+
+Statement is a declartion as it declares the variable to be a string which is a data type 
+
+Some variables begin with capitals or lowercase 
+Int - Number
+String - Letters and numbers 
+
+when a variable name contains more than one word it is conventional to capitazlie the first letter of each word beside the first e.g massDestruction not (MassDestruction)
+
+You can use any name for a variable but there are reserved, (They are used by the complier to analyse the structure)
+the main ones are:
+
+
+Public 
+Class 
+Static 
+Void 
+Int 
+
+No memorizing is needed as IDES have syntax highlighting which causes errors and diff parts of the program to be illumniated in different colours
+
+
+Java Keywords: 
+https://cdn.discordapp.com/attachments/1206839961672876073/1209308549625159752/image.png?ex=65e6735a&is=65d3fe5a&hm=a36815c98227dfdd32bfe69e6515b409577799b33a61ebf69c8c93480345c97d&
+
+Java Language Types:
+https://cdn.discordapp.com/attachments/960741444522496030/1209309831689805904/image.png?ex=65e6748b&is=65d3ff8b&hm=b28ba072d510bdf96d875628199ba7edb3d7c2df90c132dc3b3243729fb143fd&
+
+
+DATA TYPES: 
+Primitive - Cannot be decomposed into simpler components. Int is a type of primitive  
+
+Reference - Based on a class rather than one primitive thats built into java e.g "String" 
+which is in reference to "java.lang.String" 
+
+NUMERIC DATA TYPES:
+Data type is indicated by a named keyword 
+
+Examples with no decimals are 
+Byte - Keyword for small memory space for number between -128 and +127 
+Short - Keyword for a bigger memory space for number between -32,768 and +32,767
+Int - Keyword for a bigger memory space between -2 billion and + 2 biliion (this is approx)
+
+These have decimals: 
+Long - Long is a keyword for 64 bits of 2^64 numbers +/- 18,446,744,073,709,551,616
+Float - Keyword for a large memory space for a number between -2 billion and +2 billion (approx) with space for decimal places 
+Double - Double is keyword for memory which is twice as big as float, these feature decimal values and are more precise and preferred 
+
+You can use values that are literals (numbers, text or other info that directly represents a value) 
+These can be 
+1. char - Characters (single letters)
+2. Strings - (String of characters - NOT a primitive data type) 
+3. Boolean - either True or False 
+
+OPERATORS:
+Number of operators in Java. These can be Arithmetic, Relational, Logical 
+
+Arithmetic operators are symbols that are used to do mathematical computations 
+e.g 
+Addition (+)
+Subtraction (-)
+Multiplication (*)
+Division (/)
+Remainder (%)
+
+Brackets, Order of , Division, Multiplication, Addition, Subtraction. (BODMAS) 
+these are evaluated left to right 
+Brackets override the order of operations e.g (1+2)*3= 9. (Addition was first)
+
+
+ASSIGNMENT X CONCANTENATION
+
+Sign means assigment in Java
+we assign data from left to right 
+ 	String name = "RMIT	University";
+ RMIT is assigned to a string variable named Name; 
+
+Similary + Sign would mean to add from math ops but when combined with non numeric
+it becomes a concaternator (join) symbol 
+	int num = 22;
+	String value = "Age of student is"+ num;
+
+output = Age of student is 22 
+
+Example:
+Declare 4 memory boxes – num1, num2, num3, num4, and total – all of type int
+Assign values to each memory location
+Add all the numbers into total
+Print what is in each currently.
+Print the final total.
+
+Output for file is in = C:\Users\tommy\OneDrive\Uni Work\Sems 1 2024\Intro to Program\lecture W2 code.txt
+
+CONSTANTS
+final int MONTHS_IN_YEAR = 12;
+final double GST =.10 
+
+User uppercase letters for constants.
+
+final <datatype><CONSTANT_NAME>
+once the value of the constant is defined, it CANNOT be changed. 
+
+NAMING RULES 
+
+Variable name, class name, method name are called identifiers 
+There are rules for valid names:
+- Name may contain digits and letters 
+- Must start from a letter, not a digit 
+- May contain $(dollar signs) and Underscores
+- Cannot contain the symbols %,#,@ 
+- No special characters or operators
+- No Keywords 
+
+27/2 - Java API
+
+
+	Java API is set classes bundled with JDE (Java Dev Environment)
+
+	Packages are used to help make the classes easier to find and use so they are grouped together 
+
+	System and String are in the lang package 
+	By default the entire package gets imported into every java program 
+
+	Documentation: https://docs.oracle.com/javase/10/docs/api/index.html?overview-summary.html
+
+	Scanner Class is in the util package (Import java.util.scanner;)
+
+
+
+
+
+
+5/3 - Decisions, Statement
+
+	Operator	Name
+	<			less than
+	<=			less than or equal to
+	>			greater than
+	>=			greater than or equal to
+	==			equal to
+	!=			not equal to
+
+
+	example:
+
+
+
+	 x == y 		// x is equal to y
+	 x != y 		// x is not equal to y
+	 x > y 			// x is greater than y 
+	 x < y 			// x is less than y
+	 x >= y 		// x is greater than or equal to y 
+	 x <= y 		// x is less than or equal to y
+
+
+
+	Java has three logical operators: &&, ||, and !, which respectively stand for and, or, and not. 
+
+	Else x Else IF still has its original
+
+
+	The switch statement takes a specific variable then seeks to match its assigned value from a list of case options.
+	
+	The switch statement can include a final option using a default keyword to specify statements to execute when no case options match the value assigned to the specified variable.

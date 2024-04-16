@@ -1,0 +1,210 @@
+UCD Lecture Notes
+
+
+13/2/24
+
+Two aspects (Theoretical)
+
+Norman Doors are stupid design
+
+Affordance - The design itself shows you how to use it, its intutive  e.g coffee cup shows us how to use it 
+
+USB is bad design whereas HDMI has only one way to go in 
+
+Poorly Designed products have low usability 
+
+
+ISO 
+
+"the extent to which a product can be used by specified users to achieve specified goals with effectiveness, effciency and satisfaction in a a specficifed context of use"
+
+
+a product is not likley to be successful if it has poor usability 
+
+
+Nielsens Components of Usability 
+
+Learnability - Easy for users to accomplish their tasks
+Effciency - How quickly can they perform tasks 
+Memorability - Will users return to using the design after first contact 
+Errors - Will the users make errors and are they easy to be recovered 
+Satisfaction - Pleasant to use?
+
+Usability 
+
+Being pretty isnt the main goal 
+
+
+What is UCD 
+
+A methodology used by devs and designers eo ensure they make profucts that meets the users needs 
+
+if you dont build toward the user you have wasted time and money 
+
+Skills are useless if you cant use them in user/market needs 
+
+UCD techniques make it more likely that your product will be a success 
+
+
+
+Who is the expert? 
+You are not the user of the product that you are building 
+
+You are not the user 
+the user is the expert of what they want
+You need user input 
+
+4 steps
+
+Analysis of the current system (if it exists)
+
+Design of improved system 
+
+Implementation of the design e.g prototype 
+
+Evaluation of the prototype to check it meets the users needs 
+
+
+
+19/2 - Tutorial
+
+UX process - Data collection card sorting, interviews, surveys 
+it displays what the user wants, their preferences and goals 
+
+e.g User groups -> Target Audience -> RMIT library -> Existing product -> Students/Faculty 
+
+
+Usability? easy? type users - experienced and inexperienced users: tech savvy and a person who is no tech savvy 
+
+
+20/2 - User Research
+
+Customer/client is often not the user. 
+NTT contracted for PTV and not the general public 
+
+
+
+How do you find users?
+
+Existing products.
+Already have users  
+
+New products: 
+Usually the client will have access to the users 
+If your team has a marketing team they may locate the users for you BUT if you are 
+by yourself or small team you may have to do it yourself 
+
+Ways to find?
+Google Ads and ask advertise survery participation or advertise a fake product 
+
+Social media groups to gather more data (you must get permissions from mods however)
+
+Collecting Data - 
+
+1. Surveys, Observations, Diary Studies and Interviews (Direct Tools )
+2. Analytics, behaviour tracking (indirect tools)
+3. Own perception of systems (this could be way out of scope for the potential users)
+4. Always Gather as much as you can 
+5. You are to extract the signal from the noise 
+
+User Charactersitics (Basically Observing them omegalul)
+Age?
+Indentified Gender?
+Ethnicity
+Income 
+Location 
+Others 
+
+Depending on how you present it can often say a lot of what the person designing is like and give either a positive or negative expectation with your product 
+
+UCD is used to understand the users 
+Goals, Motivations
+Need Empathy so you can understand them (you CANNOT change nor Educate them)
+Think from users perspective 
+How easy/Hard the product is and how they are using it 
+
+
+USER GROUPS 
+Users are human and never identical 
+Divided into diff groups 
+user groups can be difficult to identify 
+
+
+TOP TASKS
+Most bang for buck with development time x Money 
+Tasks should be as easy as possible to finish 
+You should link Similar tasks to make it more easier for the users 
+
+
+
+
+
+27/2 - PERSONAS (not persona by Atlus)
+
+
+What is a persona? 
+A persona is a representative user. not a actual person but a character similar to the actual users of the the product 
+
+Personas make it easier for designers to think about what users might actually want, having a fictitious person makes the user data more concrete and more real 
+
+Personas discourages designers from designing for themselves 
+Multiple personas is the most ideal 
+A persona should have a life, lore, name and lots of detail that will provide fruitfull for your product 
+
+Persona MUST be based on real 'typical' characteristics of the user group 
+
+information comes from research to determine behaviours, motivations, needs, expectations and typical demographic information 
+
+
+User research involves analyzing data to identify commonalities and differences among potential users, leading to the discovery of clusters representing distinct user personas. For example, research may reveal a significant cluster of retired individuals who travel to visit family, reporting characteristics such as frailty and poor eyesight. Further investigation unveils their specific needs, such as searching for services like food, duty-free gifts for their children, and mobility aids. This information allows for the creation of a detailed user profile or persona, aiding in designing tailored services and products for this specific user type.
+
+
+Persona Elements: 
+Persona Group
+Fictional Name
+Age, Location, Income 
+Other identifying charatersitics 
+Goals 
+Motivations 
+Pain Points 
+
+
+
+
+5/3 - Design Framework x Context Scenarios
+
+
+Visual Design Framework
+	Whats in a Visual one:
+		Colour
+		Icons
+		Fonts
+		GUI components
+		Placement of GUI 
+		Gui Patterns (Errors be indicated)
+		Stylistic Rules
+
+Interaction Frame Work
+	Whats in a Interaction one:
+		End to End description of user interactions (First contact to last)
+
+		Tools:
+		Context scenarios 
+		Storyboards 
+		Use cases 
+		Wire frames
+
+
+
+Persona - describes user charactersitsics, goals/motivation, pain points 
+
+	context focuses on user than product details 
+	high level overview of interaction 
+
+
+Typical Context considerations
+	What is the setting
+	Will the product be used for long periods 
+	is the uder frequently interrupted 
+	how much privacy is there 
+	what other products is used with it 

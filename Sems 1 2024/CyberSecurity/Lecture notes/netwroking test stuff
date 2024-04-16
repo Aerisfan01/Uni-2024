@@ -1,0 +1,15 @@
+netwroking test stuff 
+
+
+
+router ospf 1 
+network 0.0.0.0   255.255.255.255   area 0
+passive -interface 	fa 0/0 
+					fa 0/1 
+
+deafult information orig 
+default route = ip route 0.0.0.0  0.0.0.0       s0/?/?       -  use on the main router and NOT the wrong one  
+
+
+
+
